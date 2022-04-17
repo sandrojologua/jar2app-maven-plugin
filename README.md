@@ -32,7 +32,7 @@ Example usage:
     <plugin>
         <groupId>com.github.sandrojologua</groupId>
         <artifactId>jar2app-maven-plugin</artifactId>
-        <version>1.0.0</version>
+        <version>1.1.0</version>
         <executions>
             <execution>
                 <phase>package</phase>
@@ -48,8 +48,9 @@ Example usage:
             <icon>src/main/resources/com/example/project/view/img/icon.icns</icon>
             <dockIcon>src/main/resources/com/example/project/view/img/icon.png</dockIcon>
             <!--This is a fat .jar, it will be generated with maven-assembly-plugin-->
-            <jar>target/${project.name}-${project.version}-jar-with-dependencies.jar</jar>
+            <jar>${project.build.directory}/${project.name}-${project.version}-jar-with-dependencies.jar</jar>
             <!--Ensure that bin/java is that java executable in this directory-->
+            <!--If not specified default Java will be used without embedding JDK-->
             <jdk>/Users/sandrojologua/Library/Java/JavaVirtualMachines/liberica-17.0.2</jdk>
             <!--This is the interpreter using which java command will be executed. It's optional, default is bash. -->
             <shellPath>/bin/sh</shellPath>

@@ -6,7 +6,7 @@
     <groupId>com.github.sandrojologua</groupId>
     <artifactId>jar2app-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 
     <build>
         <plugins>
@@ -53,7 +53,7 @@
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-plugin-api</artifactId>
-            <version>3.8.4</version>
+            <version>3.8.5</version>
         </dependency>
 
         <dependency>
