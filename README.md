@@ -32,7 +32,7 @@ Example usage:
     <plugin>
         <groupId>com.github.sandrojologua</groupId>
         <artifactId>jar2app-maven-plugin</artifactId>
-        <version>1.1.0</version>
+        <version>1.2.0</version>
         <executions>
             <execution>
                 <phase>package</phase>
